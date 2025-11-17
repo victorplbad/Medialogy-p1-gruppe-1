@@ -194,79 +194,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50345239}
   m_CullTransparentMesh: 1
---- !u!1001 &326117474
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1026150094183421939, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_Name
-      value: TH_Tugboat_04A (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1026150094183421939, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -65.84093
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0000076293945
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -257.27264
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5371849031236499605, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3db444d6033c2014481bbb1693316b90, type: 3}
 --- !u!1 &454934025
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &793963372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -559,7 +486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 88, y: -5}
+  m_AnchoredPosition: {x: -99, y: -5}
   m_SizeDelta: {x: 193, y: 489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793963373
@@ -755,7 +682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1094451879, guid: 0dcd3d53ef5a1ce459e1f753562fd598, type: 3}
+  m_Sprite: {fileID: -1124164073, guid: 9057c2972ea76de49b0b0e992c919cc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1000,4 +927,3 @@ SceneRoots:
   - {fileID: 1143912587}
   - {fileID: 1396100097}
   - {fileID: 4901849088750904183}
-  - {fileID: 326117474}
