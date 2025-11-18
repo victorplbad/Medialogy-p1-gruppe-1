@@ -4,9 +4,12 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     public float minSpeed = 0;
-    public float maxSpeed = 10;
+    public float maxSpeed = 5;
+    public float turningFactor = 0.08f;
 
     float speed;
+    float avgTurn;
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -14,10 +17,11 @@ public class CharacterController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
-        speed = math.clamp(speed + y * Time.deltaTime, minSpeed, maxSpeed);
-        
+        //if (y != 0) speed = math.lerp(speed, (y + 1) * 5, 0.05f);
+        speed = math.clamp(speed + y * Time.deltaTime * 1.5f, minSpeed, maxSpeed);
+        avgTurn = math.lerp(avgTurn, x, turningFactor);
 
-        this.transform.Rotate(new Vector3(0, x, 0));
-        this.transform.Translate(new Vector3(0, 0, speed));
+        transform.Rotate(new Vector3(0, avgTurn, 0));
+        transform.Translate(new Vector3(0, 0, speed));
     }
 }
