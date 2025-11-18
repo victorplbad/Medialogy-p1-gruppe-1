@@ -4,8 +4,12 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class CharacterController : MonoBehaviour
 {
+    public TrashMaker5000 trashFactory;
+
     public float topSpeed = 100f;
     public float turningFactor = 0.08f;
+
+    private float score = 0;
 
     float speedFraction;
     float avgTurn;
@@ -32,17 +36,16 @@ public class CharacterController : MonoBehaviour
         //body.linearVelocity = Vector3.Lerp(body.linearVelocity, 60 * speed * transform.forward, 0.05f);
         body.AddForce(topSpeed * speedFraction * transform.forward - body.linearVelocity, ForceMode.Acceleration);
         //transform.Translate(new Vector3(0, 0, speed)); BAD
-        Debug.Log("Forward: " + transform.forward + " linVel: " + body.linearVelocity);
-        Debug.Log("TSpeed: " + speedFraction * topSpeed + " ASpeed: " + body.linearVelocity.magnitude);
+        //Debug.Log("Forward: " + transform.forward + " linVel: " + body.linearVelocity);
+        //Debug.Log("TSpeed: " + speedFraction * topSpeed + " ASpeed: " + body.linearVelocity.magnitude);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("trash"))
+        if (collision.gameObject.CompareTag("trash") & trashFactory)
         {
-            Debug.Log("DELETED");
-
-            Destroy(collision.gameObject);
+            score += trashFactory.KillTrash(collision.gameObject);
+            Debug.Log("Your score is: " + score);
         }
     }
 }
