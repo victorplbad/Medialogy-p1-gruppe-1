@@ -10,7 +10,10 @@ public class TrashMaker5000 : MonoBehaviour
     public Vector3 maxPosition;
 
     public int trashMax = 100;
-    public int trashPerFrame = 0;
+    public float trashSpawnInterval = 5;
+    public int trashPerInterval = 10;
+
+    private float trashSpawnWait = 0;
     private int trashCount = 0;
 
     void Start()
@@ -25,15 +28,21 @@ public class TrashMaker5000 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        for (int i = math.min(trashMax - trashCount, trashPerFrame); i > 0 ; i--)
+        trashSpawnWait -= Time.deltaTime;
+
+        if (trashSpawnWait < 0)
         {
-            GenerateTrash();
+            trashSpawnWait += trashSpawnInterval;
+            for (int i = math.min(trashMax - trashCount, trashPerInterval); i > 0; i--)
+            {
+                GenerateTrash();
+            }
         }
     }
 
     public void GenerateTrash()
     {
-        Vector3 randomPosition = new Vector3
+        Vector3 randomPosition = transform.position + new Vector3
             (
             UnityEngine.Random.Range(minPosition.x, maxPosition.x),
             UnityEngine.Random.Range(minPosition.y, maxPosition.y),
@@ -50,7 +59,7 @@ public class TrashMaker5000 : MonoBehaviour
         }
     }
 
-    public float KillTrash(GameObject trash)
+    public float DestroyTrash(GameObject trash)
     {
         if (trash.CompareTag("trash"))
         {

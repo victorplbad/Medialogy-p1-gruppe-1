@@ -44,7 +44,7 @@ public class CharacterController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("trash") & trashFactory)
         {
-            score += trashFactory.KillTrash(collision.gameObject);
+            score += trashFactory.DestroyTrash(collision.gameObject);
             Debug.Log("Your score is: " + score);
         }
     }
