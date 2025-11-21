@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
 {
     public GameObject targetObject;
     [Range(0, 1)] public float trackingFactor = 0.15f;
-    [Range(0, 90)] public float angle = 55;
+    [Range(0, 180)] public float angle = 55;
     public float distance;
 
     private Vector3 offset;
