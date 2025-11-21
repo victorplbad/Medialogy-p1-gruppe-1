@@ -374,25 +374,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
   m_PrefabInstance: {fileID: 1661193406}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &567849017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567849016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f525d1e424a23dc4d8d65824b3c2a513, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trashPrefab: {fileID: 2677777155537783499, guid: 193586e40fc5c404cb34bb6324ae5275, type: 3}
-  player: {fileID: 567849016}
-  minPosition: {x: -250, y: 0, z: -250}
-  maxPosition: {x: 250, y: 0, z: 250}
-  trashMax: 500
-  trashSpawnInterval: 100
-  trashPerInterval: 10
 --- !u!1 &596657649
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,10 +968,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -3659507792007145510, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
-      propertyPath: trashFactory
-      value: 
-      objectReference: {fileID: 567849017}
     - target: {fileID: 8213809984649400250, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.249962
@@ -1035,13 +1012,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: boat
       objectReference: {fileID: 0}
+    - target: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 567849017}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
 --- !u!1 &1745750730
 GameObject:

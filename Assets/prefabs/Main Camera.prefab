@@ -108,4 +108,4 @@ MonoBehaviour:
   targetObject: {fileID: 0}
   trackingFactor: 0.1
   angle: 60
-  distance: 400
+  distance: 350
