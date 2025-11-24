@@ -39,7 +39,6 @@ public class TrashMaker5000 : MonoBehaviour
 
         if (trashSpawnWait > trashSpawnInterval)
         {
-            Debug.Log(trashCount);
             trashSpawnWait -= trashSpawnInterval;
             for (int i = math.min(trashMax - trashCount, trashPerInterval); i > 0; i--)
             {

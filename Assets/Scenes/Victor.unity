@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2860599470581795014, guid: cedad99538c1f9b47bb4d33ba1ae5e20, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -99
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 2860599470581795014, guid: cedad99538c1f9b47bb4d33ba1ae5e20, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -464,25 +464,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
   m_PrefabInstance: {fileID: 1402576312}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &441925243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441925242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f525d1e424a23dc4d8d65824b3c2a513, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trashPrefab: {fileID: 2677777155537783499, guid: 193586e40fc5c404cb34bb6324ae5275, type: 3}
-  player: {fileID: 441925242}
-  minPosition: {x: -250, y: 0, z: -250}
-  maxPosition: {x: 250, y: 0, z: 250}
-  trashMax: 500
-  trashSpawnInterval: 100
-  trashPerInterval: 10
 --- !u!1001 &453755870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -549,7 +530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7361323416705726294, guid: 4e26d5ad6b014524186e31f41616eb16, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -978,7 +959,7 @@ PrefabInstance:
     - target: {fileID: -3659507792007145510, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
       propertyPath: trashFactory
       value: 
-      objectReference: {fileID: 441925243}
+      objectReference: {fileID: 0}
     - target: {fileID: 7061262370927571975, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
       propertyPath: m_Constraints
       value: 116
@@ -1030,10 +1011,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 441925243}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
 --- !u!1001 &1950847985
 PrefabInstance:

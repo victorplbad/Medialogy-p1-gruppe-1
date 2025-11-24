@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5784604193322479253}
   - component: {fileID: 4514740361598637040}
   m_Layer: 0
-  m_Name: TH_Freighter_Hull_Element_06D (10)
+  m_Name: TH_Freighter_Chain_Winch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 6011492390125037822}
   - component: {fileID: 2246267995416842930}
   m_Layer: 0
-  m_Name: TH_Tugboat_Cargo_Hold_01E (1)
+  m_Name: TH_Tugboat_Cargo_Hold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 4442912344189106741}
   - component: {fileID: 6930731621880136406}
   m_Layer: 0
-  m_Name: TH_Tugboat_Bridge_01E (1)
+  m_Name: TH_Tugboat_Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,8 +748,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2714690115110695865}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13052596, y: -0.0000015955576, z: 0.00000021005874, w: -0.99144495}
-  m_LocalPosition: {x: -0.75, y: 9.549999, z: -0.75}
+  m_LocalRotation: {x: 0.13052596, y: -0.0000015955576, z: 0.00000021005876, w: -0.99144495}
+  m_LocalPosition: {x: -0.75, y: 9.549998, z: -0.7500038}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -818,7 +818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6944334556707327892}
   m_Layer: 0
-  m_Name: solpanl
+  m_Name: Rooftiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -837,11 +837,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7217601025368858945}
   - {fileID: 8475546682764001221}
+  - {fileID: 1539610359943981722}
   - {fileID: 4797168594938729456}
   - {fileID: 4465170536541988411}
-  - {fileID: 7217601025368858945}
-  - {fileID: 1539610359943981722}
   m_Father: {fileID: 8213809984649400250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4569089907325858721
@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 2147718302600195081}
   - component: {fileID: 9211550155734358878}
   m_Layer: 0
-  m_Name: TH_Tugboat_Stern_01E (1)
+  m_Name: TH_Tugboat_Stern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1054,7 +1054,7 @@ GameObject:
   - component: {fileID: 3825959997467558405}
   - component: {fileID: 3899867549996100596}
   m_Layer: 0
-  m_Name: TH_Tugboat_Hull_01E (1)
+  m_Name: TH_Tugboat_Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1550,10 +1550,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6796640745165240464}
-  - {fileID: 2298250678718674535}
   - {fileID: 6539908429270468344}
-  - {fileID: 7127632293225509100}
   - {fileID: 8655443344916863122}
+  - {fileID: 2298250678718674535}
+  - {fileID: 7127632293225509100}
   - {fileID: 2055922106052762565}
   - {fileID: 6944334556707327892}
   m_Father: {fileID: 0}
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashFactory: {fileID: 2374103968978045342}
-  topSpeed: 100
+  topSpeed: 75
   turningFactor: 0.08
 --- !u!114 &2374103968978045342
 MonoBehaviour:
@@ -1593,7 +1593,7 @@ MonoBehaviour:
   minPosition: {x: 0, y: 0, z: 0}
   maxPosition: {x: 0, y: 0, z: 0}
   trashSpawnInterval: 5
-  trashPerInterval: 15
+  trashPerInterval: 10
   trashMax: 6000
   trashRadius: 750
   maxTrashRadius: 1000
@@ -1605,7 +1605,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8679273255454328318}
   serializedVersion: 4
-  m_Mass: 100
+  m_Mass: 10000
   m_Drag: 0
   m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1637,7 +1637,7 @@ GameObject:
   - component: {fileID: 1868214402510278924}
   - component: {fileID: 4200086676994694359}
   m_Layer: 0
-  m_Name: TH_Tugboat_Bow_01E (1)
+  m_Name: TH_Tugboat_Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

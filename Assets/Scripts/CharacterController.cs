@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
@@ -5,6 +6,10 @@ using UnityEngine.SocialPlatforms.Impl;
 public class CharacterController : MonoBehaviour
 {
     public TrashMaker5000 trashFactory;
+
+    public TextMeshProUGUI scoreTracker;
+
+    public GameObject streg;
 
     public float topSpeed = 100f;
     public float turningFactor = 0.08f;
@@ -45,7 +50,8 @@ public class CharacterController : MonoBehaviour
         if (collision.gameObject.CompareTag("trash") & trashFactory)
         {
             score += trashFactory.DestroyTrash(collision.gameObject);
-            Debug.Log("Your score is: " + score);
+            scoreTracker.text = score.ToString();
+            //scoreTracker.fontStyle ^= FontStyles.Strikethrough;
         }
     }
 }
