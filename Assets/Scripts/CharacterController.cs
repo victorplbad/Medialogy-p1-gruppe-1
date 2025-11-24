@@ -33,16 +33,13 @@ public class CharacterController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
         
-        //if (y != 0) speed = math.lerp(speed, (y + 1) * 5, 0.05f);
         speedFraction = math.clamp(speedFraction + y * Time.deltaTime, 0, 1);
         avgTurn = math.lerp(avgTurn, x, turningFactor);
 
         transform.Rotate(new Vector3(0, avgTurn, 0));
+        //transform.Translate(new Vector3(0, 0, speed)); BAD
         //body.linearVelocity = Vector3.Lerp(body.linearVelocity, 60 * speed * transform.forward, 0.05f);
         body.AddForce(topSpeed * speedFraction * transform.forward - body.linearVelocity, ForceMode.Acceleration);
-        //transform.Translate(new Vector3(0, 0, speed)); BAD
-        //Debug.Log("Forward: " + transform.forward + " linVel: " + body.linearVelocity);
-        //Debug.Log("TSpeed: " + speedFraction * topSpeed + " ASpeed: " + body.linearVelocity.magnitude);
     }
 
     private void OnCollisionEnter(Collision collision)

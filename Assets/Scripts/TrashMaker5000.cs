@@ -58,7 +58,7 @@ public class TrashMaker5000 : MonoBehaviour
             math.cos(angle) * trashRadius
             );*/
 
-        Vector3 randomPosition = transform.position + player.transform.forward * (trashRadius * Random.Range(1.0f, 1.2f)) + player.transform.right * (trashRadius * Random.Range(-0.6f, 0.6f));
+        Vector3 randomPosition = transform.position + player.transform.forward * trashRadius + player.transform.right * (trashRadius * Random.Range(-0.6f, 0.6f));
 
         /*Vector3 randomPosition = transform.position + new Vector3
             (
@@ -74,8 +74,6 @@ public class TrashMaker5000 : MonoBehaviour
 
         if (trash)
         {
-            Rigidbody body = trash.GetComponent<Rigidbody>();
-            //trash.transform.localScale = trash.transform.localScale * math.sqrt(body.mass);
             trashCount++;
         }
     }
