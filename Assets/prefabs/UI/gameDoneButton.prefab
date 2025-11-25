@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 8083678251629915992}
   - component: {fileID: 7910312729130514555}
   - component: {fileID: 4417550873667877507}
+  - component: {fileID: 8778135945121579865}
   m_Layer: 5
   m_Name: gameDoneButton
   m_TagString: Untagged
@@ -164,8 +165,8 @@ RectTransform:
   m_GameObject: {fileID: 2812688803792285919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8292334423580283514}
   m_Father: {fileID: 0}
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8778135945121579865}
         m_TargetAssemblyTypeName: TimeScript, Assembly-CSharp
         m_MethodName: gameDoneButton
         m_Mode: 1
@@ -269,3 +270,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8778135945121579865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812688803792285919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2385f00c26004d178d81c8bc29a6276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  debrisSec: 0.64
+  debrisTotal: 0
+  gameDone: 0
