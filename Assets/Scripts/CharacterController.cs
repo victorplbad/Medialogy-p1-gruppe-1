@@ -53,7 +53,19 @@ public class CharacterController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("trashCheckpoint"))
         {//Put function to quizz here
-            scoreTracker.text = "WOOOW!";
+            int ID = collision.gameObject.GetComponent<CheckpointID>().ID;
+
+            switch (ID)
+            {
+                case 0:
+                    scoreTracker.text = "Pills!";
+                    break;
+
+                default:
+                    scoreTracker.text = "Error";
+                    break;
+
+            }
             Destroy(collision.gameObject);
         }
     }
