@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/IMRAN.unity
+    guid: 49036c82f60ec2b499f25c0b0015f30c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2dfe6f8ed3cdb604d8acae4f2e1074b2, type: 3}
   m_UseUCBPForAssetBundles: 0
