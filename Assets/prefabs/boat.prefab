@@ -1571,6 +1571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashFactory: {fileID: 2374103968978045342}
+  scoreTracker: {fileID: 0}
+  streg: {fileID: 0}
   topSpeed: 75
   turningFactor: 0.08
 --- !u!114 &2374103968978045342
@@ -1586,9 +1588,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashPrefabs:
-  - {fileID: 2677777155537783499, guid: 193586e40fc5c404cb34bb6324ae5275, type: 3}
-  - {fileID: 2677777155537783499, guid: 811087584a229334c8d891b32a1efccf, type: 3}
-  - {fileID: 2677777155537783499, guid: 8faf9997b82855a43b1f3c6acd47e681, type: 3}
+  - {fileID: 2677777155537783499, guid: 5f750b27ae3e8c349903d2ba3234d41e, type: 3}
+  - {fileID: 2677777155537783499, guid: bf983d376aa89e0449bca4d253f792d7, type: 3}
+  - {fileID: 2677777155537783499, guid: a38c0a9aca3fae04c932cbdc0e4c73c5, type: 3}
   player: {fileID: 8679273255454328318}
   minPosition: {x: 0, y: 0, z: 0}
   maxPosition: {x: 0, y: 0, z: 0}
