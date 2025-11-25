@@ -50,5 +50,11 @@ public class CharacterController : MonoBehaviour
             scoreTracker.text = score.ToString();
             //scoreTracker.fontStyle ^= FontStyles.Strikethrough;
         }
+
+        if (collision.gameObject.CompareTag("trashCheckpoint"))
+        {//Put function to quizz here
+            scoreTracker.text = "WOOOW!";
+            Destroy(collision.gameObject);
+        }
     }
 }
