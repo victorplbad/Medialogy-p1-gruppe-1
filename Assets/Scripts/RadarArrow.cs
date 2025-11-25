@@ -23,7 +23,7 @@ public class RadarArrow : MonoBehaviour
                 range = iRange;
             }
         }
-
+        
         if (!closestObj) return;
         //Vector3 direction = origin.transform.InverseTransformPoint(closestObj.transform.position);
         Vector3 direction = closestObj.transform.position - origin.transform.position;
