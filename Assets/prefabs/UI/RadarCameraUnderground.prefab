@@ -145,8 +145,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5836904585521436733}
+  - component: {fileID: 5821833940472044747}
   - component: {fileID: 2763729818083444069}
-  - component: {fileID: 5039518343359671713}
   m_Layer: 0
   m_Name: RadarCameraUnderground
   m_TagString: Untagged
@@ -170,6 +170,21 @@ Transform:
   - {fileID: 1482238707248234656}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5821833940472044747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398153916958726900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9dbc1a28ae54242aa74d954465d99d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {fileID: 0}
+  targetTag: trashCheckpoint
+  radarArrow: {fileID: 5077337479857781589}
 --- !u!20 &2763729818083444069
 Camera:
   m_ObjectHideFlags: 0
@@ -221,21 +236,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &5039518343359671713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398153916958726900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e9dbc1a28ae54242aa74d954465d99d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  origin: {fileID: 0}
-  targetTag: 
-  radarArrow: {fileID: 5077337479857781589}
 --- !u!1 &685091215890595180
 GameObject:
   m_ObjectHideFlags: 0

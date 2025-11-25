@@ -3,7 +3,7 @@ using UnityEngine;
 public class RadarArrow : MonoBehaviour
 {
     public GameObject origin;
-    public string targetTag;
+    public string targetTag = "trashCheckpoint";
     public GameObject radarArrow;
 
     private void FixedUpdate()
@@ -24,6 +24,7 @@ public class RadarArrow : MonoBehaviour
             }
         }
 
+        if (!closestObj) return;
         //Vector3 direction = origin.transform.InverseTransformPoint(closestObj.transform.position);
         Vector3 direction = closestObj.transform.position - origin.transform.position;
         
