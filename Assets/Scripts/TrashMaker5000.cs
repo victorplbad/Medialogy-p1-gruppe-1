@@ -35,7 +35,7 @@ public class TrashMaker5000 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        trashSpawnWait += Time.deltaTime * body.linearVelocity.magnitude; 
+        trashSpawnWait += Time.fixedDeltaTime * body.linearVelocity.magnitude; 
 
         if (trashSpawnWait > trashSpawnInterval)
         {

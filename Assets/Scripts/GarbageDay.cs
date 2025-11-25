@@ -13,7 +13,7 @@ public class GarbageDay : MonoBehaviour
 
     private void FixedUpdate()
     {
-        timer += Time.deltaTime;
+        timer += Time.fixedDeltaTime;
         if (timer > deleteInterval)
         {
             timer -= deleteInterval;

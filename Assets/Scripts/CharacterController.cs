@@ -32,8 +32,8 @@ public class CharacterController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
-        
-        speedFraction = math.clamp(speedFraction + y * Time.deltaTime, 0, 1);
+
+        speedFraction = math.clamp(speedFraction + y * Time.fixedDeltaTime, 0, 1);
         avgTurn = math.lerp(avgTurn, x, turningFactor);
 
         transform.Rotate(new Vector3(0, avgTurn, 0));
@@ -60,11 +60,9 @@ public class CharacterController : MonoBehaviour
                 case 0:
                     scoreTracker.text = "Pills!";
                     break;
-
                 default:
                     scoreTracker.text = "Error";
                     break;
-
             }
             Destroy(collision.gameObject);
         }
