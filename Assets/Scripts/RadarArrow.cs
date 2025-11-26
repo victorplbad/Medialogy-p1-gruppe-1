@@ -29,7 +29,7 @@ public class RadarArrow : MonoBehaviour
 
         //Vector3 direction = origin.transform.InverseTransformPoint(closestObj.transform.position);    //Gets angle from boat perspective
         Vector3 direction = closestObj.transform.position - origin.transform.position;                  //Gets angle from absolute posistions
-        float angle = Mathf.Atan2(direction.z, direction.x) * Mathf.Rad2Deg - 90f;
+        float angle = -Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
 
         //radarArrow.transform.localEulerAngles = new Vector3(0, 0, angle);
         //radarArrow.transform.localEulerAngles.Set(0, 0, angle);//Y NO WORK
