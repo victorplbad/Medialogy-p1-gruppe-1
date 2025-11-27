@@ -8,22 +8,6 @@ public class Animate : MonoBehaviour
     public Animator textAnimator;
     public Animator buttonAnimator;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log(boatAnimator.);
-        /*if (animator.playbackTime)
-        {
-
-        }*/
-    }
-
     public void PlayAnimation()
     {
         boatAnimator.SetBool("GO", true);
