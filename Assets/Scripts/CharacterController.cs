@@ -57,6 +57,8 @@ public class CharacterController : MonoBehaviour
             int ID = collision.gameObject.GetComponent<CheckpointID>().ID;
 
             quizObjects[ID].SetActive(true);
+            
+            Time.timeScale = 0f; // måske gøre det langsomt?
 
             switch (ID)
             {
