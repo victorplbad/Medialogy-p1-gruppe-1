@@ -1595,7 +1595,7 @@ MonoBehaviour:
   minPosition: {x: 0, y: 0, z: 0}
   maxPosition: {x: 0, y: 0, z: 0}
   trashSpawnInterval: 5
-  trashPerInterval: 10
+  trashPerInterval: 2
   trashMax: 6000
   trashRadius: 750
   maxTrashRadius: 1000

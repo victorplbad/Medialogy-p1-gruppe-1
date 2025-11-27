@@ -849,10 +849,6 @@ PrefabInstance:
       propertyPath: scoreTracker
       value: 
       objectReference: {fileID: 8135120918266634440}
-    - target: {fileID: 2374103968978045342, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
-      propertyPath: trashSpawnInterval
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8213809984649400250, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

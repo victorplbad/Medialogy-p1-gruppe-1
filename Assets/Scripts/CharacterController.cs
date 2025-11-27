@@ -1,7 +1,6 @@
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class CharacterController : MonoBehaviour
 {

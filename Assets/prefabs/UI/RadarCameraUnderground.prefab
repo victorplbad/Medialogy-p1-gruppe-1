@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9dbc1a28ae54242aa74d954465d99d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  origin: {fileID: 0}
   targetTag: trashCheckpoint
+  origin: {fileID: 0}
   radarArrow: {fileID: 5077337479857781589}
 --- !u!20 &2763729818083444069
 Camera:
@@ -217,7 +217,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 200
+  far clip plane: 20
   field of view: 60
   orthographic: 1
   orthographic size: 5
@@ -290,7 +290,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 2763729818083444069}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
