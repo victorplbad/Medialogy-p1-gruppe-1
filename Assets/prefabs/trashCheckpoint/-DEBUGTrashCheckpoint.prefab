@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8028014003217657574}
   - component: {fileID: 8118344323405164163}
   m_Layer: 0
-  m_Name: DEBUGTrashCheckpoint
+  m_Name: -DEBUGTrashCheckpoint
   m_TagString: trashCheckpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

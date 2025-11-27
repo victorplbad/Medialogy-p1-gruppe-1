@@ -6,6 +6,8 @@ public class CharacterController : MonoBehaviour
 {
     public TrashMaker5000 trashFactory;
 
+    public GameObject[] quizObjects = new GameObject[9];
+
     public TextMeshProUGUI scoreTracker;
 
     public GameObject streg;
@@ -54,10 +56,12 @@ public class CharacterController : MonoBehaviour
         {//Put function to quizz here
             int ID = collision.gameObject.GetComponent<CheckpointID>().ID;
 
+            quizObjects[ID].SetActive(true);
+
             switch (ID)
             {
                 case 0:
-                    scoreTracker.text = "debug!";
+                    scoreTracker.text = "Debug!";
                     break;
                 case 1:
                     scoreTracker.text = "Plastic poser!";
