@@ -6,7 +6,7 @@ public class ColorFade : MonoBehaviour
     public Color startColor = Color.black;
     public Color endColor = Color.clear;
     public float time = 2.5f;
-    public bool destroyAtEnd = true;
+    public bool destroyObjectAtEnd = true;
 
     private Image image;
     private float timer;
@@ -23,6 +23,7 @@ public class ColorFade : MonoBehaviour
         timer += Time.deltaTime / time;
 
         image.color = Color.Lerp(startColor, endColor, timer);
-        if (destroyAtEnd && timer > 1) Destroy(this.gameObject);
+        if (destroyObjectAtEnd && timer > 1) Destroy(this.gameObject);  //Destroy host gameObject
+        else if (timer > 1) Destroy(this);                              //Destroy only the script
     }
 }
