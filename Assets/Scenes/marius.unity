@@ -7175,7 +7175,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d82003813027824b85c6f35fd710e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 91611315}
+  boatAnimator: {fileID: 0}
+  fadeAnimator: {fileID: 0}
+  textAnimator: {fileID: 0}
+  buttonAnimator: {fileID: 0}
 --- !u!1001 &1339054665
 PrefabInstance:
   m_ObjectHideFlags: 0
