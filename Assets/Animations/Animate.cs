@@ -17,11 +17,6 @@ public class Animate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(boatAnimator.);
-        /*if (animator.playbackTime)
-        {
-
-        }*/
     }
 
     public void PlayAnimation()
