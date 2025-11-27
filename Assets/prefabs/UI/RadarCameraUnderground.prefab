@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2066093605940882807}
   - component: {fileID: 1731567579626390962}
   - component: {fileID: 7317854861277254570}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: 'Debris collected:'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 5164556753979931077}
   - component: {fileID: 3177804759263119668}
   - component: {fileID: 2877382491819036232}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 1740810324181049320}
   - component: {fileID: 5916431444145647444}
   - component: {fileID: 1908111041670524889}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 3470809111597738250}
   - component: {fileID: 569167586003909853}
   - component: {fileID: 284495598084072176}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: DirectionArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 8774920975195970468}
   - component: {fileID: 2317948040075285997}
   - component: {fileID: 8018744931556330353}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: kg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 5750779799563958141}
   - component: {fileID: 6023943540453460106}
   - component: {fileID: 7076611800383587412}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Backgroud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
