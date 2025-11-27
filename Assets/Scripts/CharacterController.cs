@@ -57,7 +57,31 @@ public class CharacterController : MonoBehaviour
             switch (ID)
             {
                 case 0:
-                    scoreTracker.text = "Pills!";
+                    scoreTracker.text = "debug!";
+                    break;
+                case 1:
+                    scoreTracker.text = "Plastic poser!";
+                    break;
+                case 2:
+                    scoreTracker.text = "Fødevareemballage!";
+                    break;
+                case 3:
+                    scoreTracker.text = "Plastic flaske!";
+                    break;
+                case 4:
+                    scoreTracker.text = "Vatpinde!";
+                    break;
+                case 5:
+                    scoreTracker.text = "Vådeservietter!";
+                    break;
+                case 6:
+                    scoreTracker.text = "Tøj!";
+                    break;
+                case 7:
+                    scoreTracker.text = "Plastic tandbørste!";
+                    break;
+                case 8:
+                    scoreTracker.text = "Cigeratskodder!";
                     break;
                 default:
                     scoreTracker.text = "Error";
