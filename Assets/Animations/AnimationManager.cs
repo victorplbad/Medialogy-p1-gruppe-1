@@ -7,6 +7,13 @@ public class AnimationManager : MonoBehaviour
     public Animator fadeAnimator;
     public Animator textAnimator;
     public Animator buttonAnimator;
+    public GameObject InfoScreen;
+    public DebrisCounterScript debrisCounterScript;
+
+    public void Start()
+    {
+        debrisCounterScript.StartCounter(true);
+    }
 
     public void PlayAnimation()
     {
@@ -23,8 +30,9 @@ public class AnimationManager : MonoBehaviour
         }
         if (name == "fadeDone")
         {
-            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHH!!!!");
-            SceneManager.LoadScene("Main");
+            InfoScreen.SetActive(true);
+            //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHH!!!!");
+            //SceneManager.LoadScene("Main");
         }
     }
 }
