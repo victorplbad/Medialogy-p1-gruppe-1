@@ -10,13 +10,9 @@ public class AnimationManager : MonoBehaviour
     public GameObject InfoScreen;
     public DebrisCounterScript debrisCounterScript;
 
-    public void Start()
-    {
-        debrisCounterScript.StartCounter(true);
-    }
-
     public void PlayAnimation()
     {
+        debrisCounterScript.StartCounter(true);
         boatAnimator.SetBool("GO", true);
         textAnimator.SetBool("GO", true);
         buttonAnimator.SetBool("GO", true);
