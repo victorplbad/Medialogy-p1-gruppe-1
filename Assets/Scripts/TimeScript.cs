@@ -80,6 +80,10 @@ public class TimeScript : MonoBehaviour
             Time.timeScale = 0;
             // game end kode
         }
+        else
+        {
+            Time.timeScale = 1;
+        }
 
     }
 

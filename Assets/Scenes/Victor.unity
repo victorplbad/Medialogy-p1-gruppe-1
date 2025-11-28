@@ -868,8 +868,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: id1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: id2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: id3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: id4
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: id5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: id6
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: id7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7544533764832996738, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: quizObjects.Array.size

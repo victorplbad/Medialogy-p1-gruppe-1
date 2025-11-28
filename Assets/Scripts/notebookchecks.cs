@@ -29,7 +29,7 @@ public class notebookchecks : MonoBehaviour
         }
 
         checkbox.SetActive(true);
-        Time.timeScale = 1f;
+        
 
     }
 
