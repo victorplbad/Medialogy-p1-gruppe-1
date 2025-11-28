@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Animate : MonoBehaviour
+public class AnimationManager : MonoBehaviour
 {
     public Animator boatAnimator;
     public Animator fadeAnimator;

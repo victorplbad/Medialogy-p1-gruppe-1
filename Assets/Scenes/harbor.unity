@@ -2053,13 +2053,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 351993630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d82003813027824b85c6f35fd710e7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bb861d7f141da14d9eeba4e7c361943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boatAnimator: {fileID: 0}
-  fadeAnimator: {fileID: 0}
-  textAnimator: {fileID: 0}
-  buttonAnimator: {fileID: 0}
 --- !u!1001 &365156480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2316,7 +2312,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &371842096
+--- !u!114 &371842092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2325,13 +2321,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 371842090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d82003813027824b85c6f35fd710e7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bb861d7f141da14d9eeba4e7c361943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boatAnimator: {fileID: 0}
-  fadeAnimator: {fileID: 351993633}
-  textAnimator: {fileID: 0}
-  buttonAnimator: {fileID: 0}
 --- !u!1001 &382386887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3564,9 +3556,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
       insertIndex: 1
-      addedObject: {fileID: 371842096}
+      addedObject: {fileID: 371842092}
     - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 371842091}
   m_SourcePrefab: {fileID: 100100000, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
 --- !u!1001 &614017385
