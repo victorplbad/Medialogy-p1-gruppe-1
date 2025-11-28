@@ -185,6 +185,8 @@ MonoBehaviour:
   targetTag: trashCheckpoint
   origin: {fileID: 0}
   radarArrow: {fileID: 5077337479857781589}
+  tmPro: {fileID: 1908111041670524889}
+  playerScript: {fileID: 0}
 --- !u!20 &2763729818083444069
 Camera:
   m_ObjectHideFlags: 0

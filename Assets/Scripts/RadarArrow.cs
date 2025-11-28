@@ -1,10 +1,19 @@
+using TMPro;
 using UnityEngine;
 
 public class RadarArrow : MonoBehaviour
 {
     public string targetTag = "trashCheckpoint";
-    public GameObject origin;
+    public GameObject origin;// this means player
     public GameObject radarArrow;
+    public TextMeshProUGUI tmPro;
+
+    private CharacterScript playerScript;
+
+    private void Start()
+    {
+        playerScript = origin.GetComponent<CharacterScript>();
+    }
 
     private void FixedUpdate()
     {
@@ -38,5 +47,7 @@ public class RadarArrow : MonoBehaviour
         if (angleDiff > 180) angleDiff -= 360;
 
         radarArrow.transform.Rotate(new Vector3(0, 0, angleDiff * -0.15f));
+
+        tmPro.text = playerScript.score.ToString();
     }
 }

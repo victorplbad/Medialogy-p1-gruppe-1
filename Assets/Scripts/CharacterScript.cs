@@ -2,7 +2,7 @@ using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class CharacterScript : MonoBehaviour
 {
     public TrashMaker5000 trashFactory;
 
@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
     public float topSpeed = 100f;
     public float turningFactor = 0.08f;
 
-    private float score = 0;
+    public float score = 0;
 
     float speedFraction;
     float avgTurn;
@@ -48,7 +48,6 @@ public class CharacterController : MonoBehaviour
         if (collision.gameObject.CompareTag("trash") & trashFactory)
         {
             score += trashFactory.DestroyTrash(collision.gameObject);
-            scoreTracker.text = score.ToString();
             //scoreTracker.fontStyle ^= FontStyles.Strikethrough;
         }
 
@@ -56,11 +55,11 @@ public class CharacterController : MonoBehaviour
         {//Put function to quizz here
             int ID = collision.gameObject.GetComponent<CheckpointID>().ID;
 
-            quizObjects[ID].SetActive(true);
+            if (ID < quizObjects.Length && quizObjects[ID]) quizObjects[ID].SetActive(true);
             
             Time.timeScale = 0f; // måske gøre det langsomt?
 
-            switch (ID)
+            /*switch (ID)
             {
                 case 0:
                     scoreTracker.text = "Debug!";
@@ -92,7 +91,7 @@ public class CharacterController : MonoBehaviour
                 default:
                     scoreTracker.text = "Error";
                     break;
-            }
+            }*/
             Destroy(collision.gameObject);
         }
     }

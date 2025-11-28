@@ -30,7 +30,7 @@ public class notebookchecks : MonoBehaviour
 
         checkbox.SetActive(true);
         
-
+        
     }
 
 
