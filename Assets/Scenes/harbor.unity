@@ -5974,9 +5974,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1006314219}
-  - component: {fileID: 1006314218}
   - component: {fileID: 1006314217}
   - component: {fileID: 1006314216}
+  - component: {fileID: 1006314220}
   m_Layer: 0
   m_Name: Darkness
   m_TagString: Untagged
@@ -6061,22 +6061,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
---- !u!114 &1006314218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006314215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d82003813027824b85c6f35fd710e7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boatAnimator: {fileID: 0}
-  fadeAnimator: {fileID: 0}
-  textAnimator: {fileID: 0}
-  buttonAnimator: {fileID: 0}
 --- !u!224 &1006314219
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6096,6 +6080,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1006314220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006314215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb861d7f141da14d9eeba4e7c361943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1010799764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11905,6 +11901,8 @@ MonoBehaviour:
   fadeAnimator: {fileID: 1006314216}
   textAnimator: {fileID: 1420897645}
   buttonAnimator: {fileID: 2089696987}
+  InfoScreen: {fileID: 2072667071}
+  debrisCounterScript: {fileID: 1313389870}
 --- !u!1001 &2104914789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12077,11 +12075,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 2130112650}
-    - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2130112649}
+    - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2130112650}
   m_SourcePrefab: {fileID: 100100000, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
 --- !u!1 &2130112648 stripped
 GameObject:
@@ -12119,13 +12117,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130112648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d82003813027824b85c6f35fd710e7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bb861d7f141da14d9eeba4e7c361943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boatAnimator: {fileID: 0}
-  fadeAnimator: {fileID: 1006314216}
-  textAnimator: {fileID: 0}
-  buttonAnimator: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
