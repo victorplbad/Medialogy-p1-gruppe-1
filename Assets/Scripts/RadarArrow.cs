@@ -20,7 +20,7 @@ public class RadarArrow : MonoBehaviour
         if (!origin) return;
 
         GameObject closestObject = null;
-        float range = 9999999;                                                                          //Big number that will be larger then whatever real objects distance
+        float range = 9999999;                                                                          //Big number that will be larger then real objects distance
 
         GameObject[] objects = GameObject.FindGameObjectsWithTag(targetTag);
 
@@ -40,12 +40,10 @@ public class RadarArrow : MonoBehaviour
         Vector3 direction = closestObject.transform.position - origin.transform.position;               //Gets angle from absolute posistions
         float angle = Mathf.Atan2(-direction.x, direction.z) * Mathf.Rad2Deg;
 
-        //radarArrow.transform.localEulerAngles.Set(0, 0, angle);//Y NO WORK
         //radarArrow.transform.localEulerAngles = new Vector3(0, 0, angle);
 
         float angleDiff = radarArrow.transform.localEulerAngles.z - angle;
         if (angleDiff > 180) angleDiff -= 360;
-
         radarArrow.transform.Rotate(new Vector3(0, 0, angleDiff * -0.15f));
 
         tmPro.text = playerScript.score.ToString();

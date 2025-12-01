@@ -6,24 +6,22 @@ public class ColorFade : MonoBehaviour
 {
     public Color startColor = Color.black;
     public Color endColor = Color.clear;
-    public float time = 2.5f;
-    public bool destroyObjectAtEnd = true;
+    public float fadeDuration = 2.5f;
+    public bool destroyObjectAtEnd = false;
 
     private Image image;
-    private TextMeshProUGUI text;
+    private TextMeshProUGUI text;           //Late addition to allow for fading buttons with text
     private float timer;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         image = GetComponent<Image>();
         if (transform.childCount > 0) text = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        timer += Time.unscaledDeltaTime / time;
+        timer += Time.unscaledDeltaTime / fadeDuration;
         Color color = Color.Lerp(startColor, endColor, timer);
 
         if (image) image.color = color;
