@@ -21,7 +21,7 @@ public class ColorFade : MonoBehaviour
 
     void Update()
     {
-        timer += Time.unscaledDeltaTime / fadeDuration;
+        timer += Mathf.Min(Time.unscaledDeltaTime, 0.05f) / fadeDuration;
         Color color = Color.Lerp(startColor, endColor, timer);
 
         if (image) image.color = color;
