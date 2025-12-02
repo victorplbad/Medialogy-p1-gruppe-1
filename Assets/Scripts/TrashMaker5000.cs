@@ -6,9 +6,6 @@ public class TrashMaker5000 : MonoBehaviour
 {
     public GameObject[] trashPrefabs;
     public GameObject player;
-    
-    public Vector3 minPosition;
-    public Vector3 maxPosition;
 
     public float trashSpawnInterval = 100;
     public int trashPerInterval = 10;
@@ -16,29 +13,21 @@ public class TrashMaker5000 : MonoBehaviour
     public int trashRadius = 500;
     public int maxTrashRadius = 1000;
 
-    private Rigidbody body;
-
     private float trashSpawnWait = 0;
     private int trashCount = 0;
+    private Rigidbody body;
 
     void Start()
     {
         body = player.GetComponent<Rigidbody>();
-        /*
-        int i = 0;
-        while(i <= trashMax)
-        {
-            GenerateTrash();
-            i++;
-        }*/
     }
 
     private void FixedUpdate()
     {
-        trashSpawnWait += Time.fixedDeltaTime * body.linearVelocity.magnitude; 
+        trashSpawnWait += Time.fixedDeltaTime * body.linearVelocity.magnitude;
 
-        if (trashSpawnWait > trashSpawnInterval)
-        {
+        while (trashSpawnWait > trashSpawnInterval)
+        {   //Using while in case of large movement steps so it can spawn trash multiple times per frame if needed
             trashSpawnWait -= trashSpawnInterval;
             for (int i = math.min(trashMax - trashCount, trashPerInterval); i > 0; i--)
             {
@@ -50,32 +39,13 @@ public class TrashMaker5000 : MonoBehaviour
     public void GenerateTrash()
     {
         float angle = Random.Range(0, math.PI2);
-        /*
-        Vector3 randomPosition = transform.position + new Vector3
-            (
-            math.sin(angle) * trashRadius,
-            0,
-            math.cos(angle) * trashRadius
-            );*/
-
         Vector3 randomPosition = transform.position + player.transform.forward * trashRadius + player.transform.right * (trashRadius * Random.Range(-0.6f, 0.6f));
 
-        /*Vector3 randomPosition = transform.position + new Vector3
-            (
-            UnityEngine.Random.Range(minPosition.x, maxPosition.x),
-            UnityEngine.Random.Range(minPosition.y, maxPosition.y),
-            UnityEngine.Random.Range(minPosition.z, maxPosition.z)
-            );*/
-
-        GameObject prefab = trashPrefabs[Random.Range(0, trashPrefabs.Length)]; //Pick a random prefab
-
+        GameObject prefab = trashPrefabs[Random.Range(0, trashPrefabs.Length)];         //Pick a random prefab
         GameObject trash = Instantiate(prefab, randomPosition, Quaternion.identity);
         trash.transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
 
-        if (trash)
-        {
-            trashCount++;
-        }
+        if (trash) trashCount++;
     }
 
     public float DestroyTrash(GameObject trash)
