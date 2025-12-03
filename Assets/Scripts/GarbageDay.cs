@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GarbageDay : MonoBehaviour
 {
-    public float deleteInterval = 5;
+    public float testInterval = 5;
     float timer = 0;
     TrashMaker5000 tm;
 
@@ -14,9 +14,9 @@ public class GarbageDay : MonoBehaviour
     private void FixedUpdate()
     {
         timer += Time.fixedDeltaTime;
-        if (timer > deleteInterval)
+        if (timer > testInterval)
         {
-            timer -= deleteInterval;
+            timer = 0;
             //Debug.Log((transform.position - tm.transform.position).magnitude);
             if((transform.position - tm.transform.position).magnitude > tm.maxTrashRadius)
             {
