@@ -71,14 +71,10 @@ public class TimeScript : MonoBehaviour
             debrisTotal = timer * debrisSec;
             Debug.Log(debrisTotal);
 
-
-            
-            Time.timeScale = 0;
             // game end kode
         }
         else
         {
-            Time.timeScale = 1;
         }
 
     }

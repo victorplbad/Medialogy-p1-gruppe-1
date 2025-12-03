@@ -24,6 +24,7 @@ public class RadarAskQuestion : MonoBehaviour
         screen.SetActive(false);
         questions.transform.GetChild(ID).gameObject.SetActive(true);
         animator.SetBool("GetBig", true);
+        Time.timeScale = 0.0f;              //Red light
     }
 
     public void CloseQuestions()
@@ -34,5 +35,6 @@ public class RadarAskQuestion : MonoBehaviour
             questions.transform.GetChild(i).gameObject.SetActive(false);
         }
         animator.SetBool("GetBig", false);
+        Time.timeScale = 1.0f;              //Green light
     }
 }
