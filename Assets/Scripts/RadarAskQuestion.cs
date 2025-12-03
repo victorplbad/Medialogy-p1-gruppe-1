@@ -5,6 +5,8 @@ public class RadarAskQuestion : MonoBehaviour
     public GameObject screen;
     public GameObject questions;
 
+    public GameManager gameManager;
+
     private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +27,8 @@ public class RadarAskQuestion : MonoBehaviour
         questions.transform.GetChild(ID).gameObject.SetActive(true);
         animator.SetBool("GetBig", true);
         Time.timeScale = 0.0f;              //Red light
+
+        gameManager.CompletedObjective(ID);
     }
 
     public void CloseQuestions()
@@ -36,5 +40,7 @@ public class RadarAskQuestion : MonoBehaviour
         }
         animator.SetBool("GetBig", false);
         Time.timeScale = 1.0f;              //Green light
+
+        gameManager.TrueEnding();
     }
 }
