@@ -1,9 +1,11 @@
 using UnityEngine;
 
-public class AskAQQuestion : MonoBehaviour
+public class RadarAskQuestion : MonoBehaviour
 {
     public GameObject screen;
     public GameObject questions;
+
+    public GameManager gameManager;
 
     private Animator animator;
 
@@ -24,6 +26,9 @@ public class AskAQQuestion : MonoBehaviour
         screen.SetActive(false);
         questions.transform.GetChild(ID).gameObject.SetActive(true);
         animator.SetBool("GetBig", true);
+        Time.timeScale = 0.0f;              //Red light
+
+        gameManager.CompletedObjective(ID);
     }
 
     public void CloseQuestions()
@@ -34,5 +39,8 @@ public class AskAQQuestion : MonoBehaviour
             questions.transform.GetChild(i).gameObject.SetActive(false);
         }
         animator.SetBool("GetBig", false);
+        Time.timeScale = 1.0f;              //Green light
+
+        gameManager.TrueEnding();
     }
 }

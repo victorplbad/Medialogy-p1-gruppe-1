@@ -28,7 +28,10 @@ public class AnimationManager : MonoBehaviour
         {
             InfoScreen.SetActive(true);
             //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHH!!!!");
-            //SceneManager.LoadScene("Main");
+        }
+        if (name == "ChangeScene")
+        {
+            SceneManager.LoadScene("Main");
         }
     }
 }
