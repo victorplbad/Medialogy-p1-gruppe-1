@@ -5,12 +5,7 @@ using UnityEngine;
 public class CharacterScript : MonoBehaviour
 {
     public TrashMaker5000 trashFactory;
-
-    public GameObject[] quizObjects = new GameObject[9];
-
-    public TextMeshProUGUI scoreTracker;
-
-    public GameObject streg;
+    public GameObject radar;
 
     public float topSpeed = 100f;
     public float turningFactor = 0.08f;
@@ -55,9 +50,8 @@ public class CharacterScript : MonoBehaviour
         {//Put function to quizz here
             int ID = collision.gameObject.GetComponent<CheckpointID>().ID;
 
-            if (ID < quizObjects.Length && quizObjects[ID]) quizObjects[ID].SetActive(true);
+            radar.GetComponent<RadarAskQuestion>().AskQuestion(ID);
             
-            Time.timeScale = 0f; // måske gøre det langsomt?
 
             /*switch (ID)
             {

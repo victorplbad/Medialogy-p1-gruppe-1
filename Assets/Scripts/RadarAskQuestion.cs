@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AskAQQuestion : MonoBehaviour
+public class RadarAskQuestion : MonoBehaviour
 {
     public GameObject screen;
     public GameObject questions;
