@@ -2300,7 +2300,7 @@ PrefabInstance:
       objectReference: {fileID: 2426287583526653862}
     - target: {fileID: 3829043246073406595, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4260959480425246699, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
       propertyPath: starbox
