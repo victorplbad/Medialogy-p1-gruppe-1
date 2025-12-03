@@ -28,13 +28,8 @@ public class GameManager : MonoBehaviour
 
         if (gameFinished)
         {
-            tmPro.text = initialText.Replace("1", Round2Decimals(character.score)).Replace("2", Round2Decimals(debrisTotal));
+            tmPro.text = initialText.Replace("1", character.score.ToString("F2")).Replace("2", debrisTotal.ToString("F2"));
         }
-    }
-
-    string Round2Decimals(float value)
-    {
-        return (Mathf.Round(value * 100) * 0.01f).ToString();
     }
 
     public void CompletedObjective(int ID)

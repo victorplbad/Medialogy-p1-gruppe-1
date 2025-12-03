@@ -46,6 +46,6 @@ public class RadarArrow : MonoBehaviour
         if (angleDiff > 180) angleDiff -= 360;
         radarArrow.transform.Rotate(new Vector3(0, 0, angleDiff * -0.15f));
 
-        tmPro.text = playerScript.score.ToString();
+        tmPro.text = playerScript.score.ToString("F2");
     }
 }
