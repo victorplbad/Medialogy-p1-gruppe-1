@@ -2,43 +2,53 @@ using UnityEngine;
 
 public class SoundEffects : MonoBehaviour
 {
-    public AudioSource inGameAudio;
+    public AudioSource boatAudio;
     public AudioSource UiAudio;
     public AudioSource musicAudio;
+    public AudioSource waterAudio;
 
     public AudioClip boatSound;
     public AudioClip waveSound;
     public AudioClip seagullSound;
     public AudioClip musicSound;
+    public AudioClip waterSound;
 
     private Rigidbody rb;
     private CharacterScript c;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
         c = GetComponent<CharacterScript>();
+
+        waterAudio.clip = waterSound;
     }
 
     
     void Update()
     {
         float speed = rb.linearVelocity.magnitude * Time.timeScale;
+        waterAudio.volume = Time.timeScale * 0.1f;
+        if (!waterAudio.isPlaying) waterAudio.Play();
 
-        inGameAudio.volume = (speed / 150) + 0.1f;
+        boatAudio.volume = (speed / 400) + 0.1f;
 
-        Debug.Log("speed" + speed);
-        if (speed > 5f && !inGameAudio.isPlaying)
+        //Debug.Log("speed" + speed);
+        if (speed > 5f && !boatAudio.isPlaying)
         {
-            //Debug.Log("boatMove");
-            inGameAudio.clip = boatSound;
-            inGameAudio.Play();
+            
+            boatAudio.clip = boatSound;
+            boatAudio.Play();
         }
-        else if (speed <= 5f && inGameAudio.isPlaying)
+        else if (speed <= 5f && boatAudio.isPlaying)
         {  
-            inGameAudio.Stop();
+            boatAudio.Stop();
         }
+
         
-    
     }
+
+    public void PlaySound(AudioClip clip)
+    {
+        UiAudio.PlayOneShot(clip);    }
 }
