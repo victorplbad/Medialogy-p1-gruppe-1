@@ -24,7 +24,7 @@ public class TimeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+        timer += Time.unscaledDeltaTime;
     }
 
     public void GetId(int id)
