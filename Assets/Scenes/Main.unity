@@ -797,10 +797,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Du fjernede 1 kg affald fra havet
-
-    I tiden du spillede blev der smidt
-    2 kg ud'
+  m_text: "Du fjernede { kg affald fra havet.\nI tiden du spillede blev der smidt
+    [ kg ud.\nHvis de 8 checkpointtrash du samlede var erstattet,\ns\xE5 ville der
+    kun v\xE6re blevet smidt ] kg ud istedet."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -924,6 +923,14 @@ PrefabInstance:
     - target: {fileID: 148008128153659688, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175440910167072864, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -33.444824
+      objectReference: {fileID: 0}
+    - target: {fileID: 175440910167072864, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.09839
       objectReference: {fileID: 0}
     - target: {fileID: 420267881266008658, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: m_SizeDelta.x

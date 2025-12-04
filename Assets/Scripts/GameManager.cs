@@ -28,7 +28,12 @@ public class GameManager : MonoBehaviour
 
         if (gameFinished)
         {
-            tmPro.text = initialText.Replace("1", character.score.ToString("F2")).Replace("2", debrisTotal.ToString("F2"));
+            string newText = initialText;
+            newText.Replace("{", character.score.ToString("F2"));
+            newText.Replace("[", debrisTotal.ToString("F2"));
+            newText.Replace("]", (debrisTotal * 0.3).ToString("F2"));
+
+            tmPro.text = newText;
         }
     }
 
