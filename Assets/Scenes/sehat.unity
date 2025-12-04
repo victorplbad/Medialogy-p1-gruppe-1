@@ -8782,7 +8782,7 @@ MonoBehaviour:
   waveSound: {fileID: 0}
   seagullSound: {fileID: 0}
   musicSound: {fileID: 0}
-  waterSound: {fileID: 8300000, guid: cbb0a86720870714cadbc28787e9c8ff, type: 3}
+  waterSound: {fileID: 8300000, guid: 05ad322c8cb7e064b83ce658b89bdc9a, type: 3}
 --- !u!4 &1483139407
 Transform:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class SoundEffects : MonoBehaviour
     void Update()
     {
         float speed = rb.linearVelocity.magnitude * Time.timeScale;
-        waterAudio.volume = Time.timeScale * 0.1f;
+        waterAudio.volume = Time.timeScale * 0.05f;
         if (!waterAudio.isPlaying) waterAudio.Play();
 
         boatAudio.volume = (speed / 400) + 0.1f;
