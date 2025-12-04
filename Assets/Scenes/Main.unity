@@ -797,9 +797,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Du fjernede { kg affald fra havet.\nI tiden du spillede blev der smidt
-    [ kg ud.\nHvis de 8 checkpointtrash du samlede var erstattet,\ns\xE5 ville der
-    kun v\xE6re blevet smidt ] kg ud istedet."
+  m_text: "Du fjernede AAAB kg affald fra havet.\nI tiden du spillede blev der smidt
+    AAAC kg ud.\nHvis de 8 checkpointtrash du samlede var erstattet,\ns\xE5 ville
+    der kun v\xE6re blevet smidt AAAD kg ud istedet."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
