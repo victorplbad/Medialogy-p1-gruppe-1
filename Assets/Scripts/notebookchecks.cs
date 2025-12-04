@@ -9,29 +9,10 @@ public class notebookchecks : MonoBehaviour
 
     public bool rightAnswer = false;
 
-
-    public void Right(bool correct)
+    public void ButtonPress(bool correct)
     {
-        rightAnswer = correct;
-
-    }
-
-
-    public void ButtonPress()
-    {
-
-
-        if (rightAnswer == true)
-        {
-
-            starbox.SetActive(true);
-
-        }
+        starbox.SetActive(correct);
 
         checkbox.SetActive(true);
-        
-        
     }
-
-
 }
