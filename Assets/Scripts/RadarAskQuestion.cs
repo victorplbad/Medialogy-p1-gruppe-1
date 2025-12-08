@@ -5,26 +5,21 @@ public class RadarAskQuestion : MonoBehaviour
     public GameObject screen;
     public GameObject questions;
 
-    public GameManager gameManager;
+    public GameObjectiveManager gameManager;
 
     private Animator animator;
+    private GameObject activeQuestion;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void AskQuestion(int ID)
     {
         screen.SetActive(false);
-        questions.transform.GetChild(ID).gameObject.SetActive(true);
+        activeQuestion = questions.transform.GetChild(ID).gameObject;
+        activeQuestion.SetActive(true);
         animator.SetBool("GetBig", true);
         Time.timeScale = 0.0f;              //Red light
 
@@ -34,13 +29,11 @@ public class RadarAskQuestion : MonoBehaviour
     public void CloseQuestions()
     {
         screen.SetActive(true);
-        for (int i = 0; i < questions.transform.childCount; i++)
-        {
-            questions.transform.GetChild(i).gameObject.SetActive(false);
-        }
+
+        activeQuestion.SetActive(false);
         animator.SetBool("GetBig", false);
         Time.timeScale = 1.0f;              //Green light
 
-        gameManager.TrueEnding();
+        gameManager.EndCheck();
     }
 }

@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameObjectiveManager : MonoBehaviour
 {
     public float timer = 0f;
     public float debrisSec = 680.1f;
@@ -50,23 +50,20 @@ public class GameManager : MonoBehaviour
         }
         gameFinished = done;
 
-        if (done) // game end
-        {
+        if (done)
+        {   // game end
             debrisTotal = timer * debrisSec;
             Debug.Log(debrisTotal);
-
-            // game end kode
         }
     }
 
     public GameObject endScreen;
 
-    public void TrueEnding()
+    public void EndCheck()
     {
         if (!gameFinished) return;
 
         endScreen.SetActive(true);
-        
         Time.timeScale = 0f;
     }
 
