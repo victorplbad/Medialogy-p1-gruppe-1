@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
@@ -50,8 +51,16 @@ public class CharacterScript : MonoBehaviour
         {//Put function to quizz here
             int ID = collision.gameObject.GetComponent<CheckpointID>().ID;
 
-            radar.GetComponent<RadarAskQuestion>().AskQuestion(ID);
+            float delay = radar.GetComponent<RadarAskQuestion>().TalkTrash(ID);
+            StartCoroutine(DelayedQuestion(delay, ID));
             Destroy(collision.gameObject);
         }
     }
+
+    IEnumerator DelayedQuestion(float delay, int ID)
+    {
+        yield return new WaitForSeconds(delay);
+        radar.GetComponent<RadarAskQuestion>().AskQuestion(ID);
+    }
+
 }
