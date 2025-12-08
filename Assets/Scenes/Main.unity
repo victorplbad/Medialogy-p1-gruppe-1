@@ -2209,7 +2209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviour: {fileID: 1612291313}
-  gameObject: {fileID: 694371097}
+  go: {fileID: 694371097}
 --- !u!222 &1612291315
 CanvasRenderer:
   m_ObjectHideFlags: 0
