@@ -15,7 +15,13 @@ public class SoundEffectsHarbor : MonoBehaviour
 
     void Start()
     {
-      
+        waterAudio.clip = waterSound;
+        waterAudio.volume = 0.1f;
+    }
+
+    private void Update()
+    {
+        if (!waterAudio.isPlaying) waterAudio.Play();
     }
 
     public void PlayMusicWithDelay()

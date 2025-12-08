@@ -31,7 +31,7 @@ public class SoundEffects : MonoBehaviour
         waterAudio.volume = Time.timeScale * 0.1f;
         if (!waterAudio.isPlaying) waterAudio.Play();
 
-        boatAudio.volume = (speed / 200) + 0.2f;
+        boatAudio.volume = (speed / 200) + 0.15f;
 
         //Debug.Log("speed" + speed);
         if (speed > 5f && !boatAudio.isPlaying)
