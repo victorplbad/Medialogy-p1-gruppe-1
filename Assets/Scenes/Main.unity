@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 194405815}
   - component: {fileID: 194405814}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ContinueReminder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2308,13 +2308,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2385f00c26004d178d81c8bc29a6276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
+  character: {fileID: 1420038057}
+  endScreen: {fileID: 1612291310}
+  endScreenText: {fileID: 1810144336}
   debrisSec: 680.1
   debrisTotal: 0
   gameFinished: 0
-  character: {fileID: 1420038057}
-  tmPro: {fileID: 1810144336}
-  endScreen: {fileID: 1612291310}
 --- !u!4 &1703908435
 Transform:
   m_ObjectHideFlags: 0
@@ -2404,7 +2403,7 @@ GameObject:
   - component: {fileID: 1810144336}
   - component: {fileID: 1810144335}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: EndText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
