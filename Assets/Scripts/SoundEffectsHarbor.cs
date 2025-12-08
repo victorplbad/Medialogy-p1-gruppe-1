@@ -20,13 +20,13 @@ public class SoundEffectsHarbor : MonoBehaviour
 
     public void PlayMusicWithDelay()
     {
-        Invoke("PlayMusic", 6.5f);
+        Invoke("PlayMusic", 6f);
     }
         
 
     public void PlayMusic()
     {
-        Debug.Log("test");
+       // Debug.Log("test");
         //musicAudio.PlayOneShot(musicSound);
         musicAudio.clip = musicSound;
         musicAudio.Play();

@@ -6599,7 +6599,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "S\xE5 meget affald rammer havet lige nu:\n\n22 millioner tons hvert \xE5r.\n 
-    60.000 tons hver dag.\n    42 tons hvert minut.\n      700 kilo hvert sekund.\n\nOg
+    60.000 tons hver dag.\n    42 tons hvert minut.\n      680 kilo hvert sekund.\n\nOg
     tallet stiger, for hver sekund der g\xE5r.\n\nSiden du startede spillet:\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9324,7 +9324,7 @@ MonoBehaviour:
   boatSound: {fileID: 0}
   waveSound: {fileID: 0}
   seagullSound: {fileID: 0}
-  musicSound: {fileID: 0}
+  musicSound: {fileID: 8300000, guid: 7f20a6ce92ef321418dca8c5afefb6d6, type: 3}
   waterSound: {fileID: 0}
 --- !u!1001 &1698492096
 PrefabInstance:
@@ -10214,7 +10214,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12082,11 +12082,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1663589938}
         m_TargetAssemblyTypeName: SoundEffectsHarbor, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 2
+        m_MethodName: PlayMusicWithDelay
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 7f20a6ce92ef321418dca8c5afefb6d6, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
