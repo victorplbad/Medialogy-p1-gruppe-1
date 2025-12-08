@@ -4,13 +4,13 @@ public class SoundEffects : MonoBehaviour
 {
     public AudioSource boatAudio;
     public AudioSource UiAudio;
-    public AudioSource musicAudio;
+   // public AudioSource musicAudio;
     public AudioSource waterAudio;
 
     public AudioClip boatSound;
-    public AudioClip waveSound;
+   // public AudioClip waveSound;
     public AudioClip seagullSound;
-    public AudioClip musicSound;
+   // public AudioClip musicSound;
     public AudioClip waterSound;
 
     private Rigidbody rb;
@@ -28,10 +28,10 @@ public class SoundEffects : MonoBehaviour
     void Update()
     {
         float speed = rb.linearVelocity.magnitude * Time.timeScale;
-        waterAudio.volume = Time.timeScale * 0.05f;
+        waterAudio.volume = Time.timeScale * 0.1f;
         if (!waterAudio.isPlaying) waterAudio.Play();
 
-        boatAudio.volume = (speed / 400) + 0.1f;
+        boatAudio.volume = (speed / 200) + 0.2f;
 
         //Debug.Log("speed" + speed);
         if (speed > 5f && !boatAudio.isPlaying)
