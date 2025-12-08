@@ -10,7 +10,6 @@ public class ButtonSelect : MonoBehaviour
         List<Button> list = new List<Button>();
         for (int i = 0; i < transform.childCount; i++)
         {
-
             Button b = transform.GetChild(i).GetComponent<Button>();
 
             if (b == null) continue;
@@ -28,7 +27,7 @@ public class ButtonSelect : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && EventSystem.current.currentSelectedGameObject)
         {
             EventSystem.current.currentSelectedGameObject.GetComponent<Button>().onClick.Invoke();
         }
