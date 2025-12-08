@@ -27,7 +27,6 @@ public class AnimationManager : MonoBehaviour
         if (name == "fadeDone")
         {
             InfoScreen.SetActive(true);
-            //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHH!!!!");
         }
         if (name == "ChangeScene")
         {
