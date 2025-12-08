@@ -1,16 +1,19 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SoundEffects : MonoBehaviour
 {
     public AudioSource boatAudio;
     public AudioSource UiAudio;
-   // public AudioSource musicAudio;
+    // public AudioSource musicAudio;
     public AudioSource waterAudio;
+    public AudioSource ambientAudio;
 
     public AudioClip boatSound;
-   // public AudioClip waveSound;
+    // public AudioClip waveSound;
     public AudioClip seagullSound;
-   // public AudioClip musicSound;
+    // public AudioClip musicSound;
     public AudioClip waterSound;
 
     private Rigidbody rb;
@@ -22,30 +25,46 @@ public class SoundEffects : MonoBehaviour
         c = GetComponent<CharacterScript>();
 
         waterAudio.clip = waterSound;
+        ambientAudio.clip = seagullSound;
+
+        StartCoroutine(PlaySeagullRandomly());
     }
 
-    
+
     void Update()
     {
         float speed = rb.linearVelocity.magnitude * Time.timeScale;
         waterAudio.volume = Time.timeScale * 0.1f;
         if (!waterAudio.isPlaying) waterAudio.Play();
 
-        boatAudio.volume = (speed / 200) + 0.15f;
+        boatAudio.volume = (speed / 200) + 0.1f;
+
+        Debug.Log(Time.time);
 
         //Debug.Log("speed" + speed);
         if (speed > 5f && !boatAudio.isPlaying)
         {
-            
+
             boatAudio.clip = boatSound;
             boatAudio.Play();
         }
         else if (speed <= 5f && boatAudio.isPlaying)
-        {  
+        {
             boatAudio.Stop();
         }
-
         
+
+    }
+
+    IEnumerator PlaySeagullRandomly()
+    {
+        while (true)
+        {
+            float delay = Random.Range(30f, 60f);
+            yield return new WaitForSeconds(delay);
+
+            ambientAudio.PlayOneShot(seagullSound);
+        }
     }
 
     public void PlaySound(AudioClip clip)
