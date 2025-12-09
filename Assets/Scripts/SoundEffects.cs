@@ -6,14 +6,13 @@ public class SoundEffects : MonoBehaviour
 {
     public AudioSource boatAudio;
     public AudioSource UiAudio;
-    // public AudioSource musicAudio;
+    public AudioSource musicAudio;
     public AudioSource waterAudio;
     public AudioSource ambientAudio;
 
     public AudioClip boatSound;
-    // public AudioClip waveSound;
     public AudioClip seagullSound;
-    // public AudioClip musicSound;
+    public AudioClip musicSound;
     public AudioClip waterSound;
 
     private Rigidbody rb;
@@ -54,6 +53,12 @@ public class SoundEffects : MonoBehaviour
         }
         
 
+    }
+
+    public void PlayMusic()
+    {
+        musicAudio.clip = musicSound;
+        musicAudio.Play();
     }
 
     IEnumerator PlaySeagullRandomly()

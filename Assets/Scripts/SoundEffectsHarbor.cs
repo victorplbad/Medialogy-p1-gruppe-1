@@ -48,8 +48,6 @@ public class SoundEffectsHarbor : MonoBehaviour
 
     public void PlayMusic()
     {
-       // Debug.Log("test");
-        //musicAudio.PlayOneShot(musicSound);
         musicAudio.clip = musicSound;
         musicAudio.Play();
     }

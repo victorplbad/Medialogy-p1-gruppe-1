@@ -673,11 +673,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae9a67f94eba2d4da60492ef8ea9f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 0.1
-  speedY: 0.1
-  waveAmplitude: 0.2
-  waveFrequency: 2
-  waveSpeed: 1
+  speedX: 0.2
+  speedY: 0
+  waveAmplitude: 0.02
+  waveFrequency: 3
+  waveSpeed: 1.2
 --- !u!1 &874657768
 GameObject:
   m_ObjectHideFlags: 0
