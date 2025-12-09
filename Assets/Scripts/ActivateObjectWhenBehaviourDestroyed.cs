@@ -12,7 +12,7 @@ public class ActivateObjectWhenBehaviourDestroyed : MonoBehaviour
         if (behaviour.IsDestroyed())
         {
             go.SetActive(behaviour.IsDestroyed());
-            GameObject.FindGameObjectWithTag("SfxPlayer").GetComponent<SoundEffects>().PlayMusic();
+            GameObject.FindGameObjectWithTag("SfxPlayer").GetComponent<SoundEffects>().PlayMusic(); 
             Destroy(this);
         }
     }
