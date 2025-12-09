@@ -65,7 +65,7 @@ public class SoundEffects : MonoBehaviour
     {
         while (true)
         {
-            float delay = Random.Range(30f, 60f);
+            float delay = Random.Range(30f, 60f) + seagullSound.length;
             yield return new WaitForSeconds(delay);
 
             ambientAudio.PlayOneShot(seagullSound);

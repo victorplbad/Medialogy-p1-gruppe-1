@@ -57,7 +57,7 @@ public class SoundEffectsHarbor : MonoBehaviour
         boatAudio.volume = 0.4f;
         boatAudio.PlayOneShot(boatSound);
 
-        boatHornAudio.volume = 0.1f;
+        boatHornAudio.volume = 0.15f;
         boatHornAudio.PlayOneShot(boatHornSound);
     }
 }
