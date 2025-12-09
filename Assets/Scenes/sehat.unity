@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 31884541}
   - component: {fileID: 31884539}
-  - component: {fileID: 31884540}
   m_Layer: 0
   m_Name: ambientSoundObject
   m_TagString: Untagged
@@ -234,25 +233,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &31884540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31884538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6891feb7b0360064ea28ec45a8050f5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boatAudio: {fileID: 0}
-  UiAudio: {fileID: 0}
-  waterAudio: {fileID: 0}
-  ambientAudio: {fileID: 0}
-  boatSound: {fileID: 0}
-  seagullSound: {fileID: 0}
-  waterSound: {fileID: 0}
 --- !u!4 &31884541
 Transform:
   m_ObjectHideFlags: 0

@@ -69,5 +69,6 @@ public class SoundEffects : MonoBehaviour
 
     public void PlaySound(AudioClip clip)
     {
-        UiAudio.PlayOneShot(clip);    }
+        UiAudio.PlayOneShot(clip);    
+        }
 }
