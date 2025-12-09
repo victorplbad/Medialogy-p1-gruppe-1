@@ -39,7 +39,7 @@ public class SoundEffects : MonoBehaviour
 
         boatAudio.volume = (speed / 200) + 0.1f;
 
-        Debug.Log(Time.time);
+       
 
         //Debug.Log("speed" + speed);
         if (speed > 5f && !boatAudio.isPlaying)
