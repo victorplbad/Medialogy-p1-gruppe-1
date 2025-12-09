@@ -32,7 +32,7 @@ public class GameObjectiveManager : MonoBehaviour
             string newText = initialText;
             newText = newText.Replace("AAAB", character.score.ToString("F2"));
             newText = newText.Replace("AAAC", debrisTotal.ToString("F2"));
-            newText = newText.Replace("AAAD", (debrisTotal * 0.3).ToString("F2"));
+            newText = newText.Replace("AAAD", (debrisTotal * 0.7).ToString("F2"));
             endScreenText.text = newText;
         }
     }
