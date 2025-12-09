@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class RadarAskQuestion : MonoBehaviour
 {
     public GameObject screen;
     public GameObject questions;
+    public GameObject speechBubble;
 
     public GameObjectiveManager gameManager;
 
@@ -13,6 +15,13 @@ public class RadarAskQuestion : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+    }
+
+    public float TalkTrash(int ID)
+    {
+        GameObject obj = speechBubble.transform.GetChild(ID).gameObject;
+        obj.GetComponent<PlayableDirector>().Play();
+        return (float)obj.GetComponent<PlayableDirector>().duration;
     }
 
     public void AskQuestion(int ID)
