@@ -3692,11 +3692,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae9a67f94eba2d4da60492ef8ea9f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 0.3
-  speedY: 0.2
-  waveAmplitude: 0.5
+  speedX: 0.05
+  speedY: 0
+  waveAmplitude: 0.02
   waveFrequency: 3
-  waveSpeed: 0.2
+  waveSpeed: 1.2
 --- !u!1001 &2130587369
 PrefabInstance:
   m_ObjectHideFlags: 0
