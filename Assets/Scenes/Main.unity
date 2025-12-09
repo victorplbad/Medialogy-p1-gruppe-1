@@ -4145,8 +4145,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9165791493283531726, guid: 6d4059b8bf2c9cf45b753921d250c122, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2097770004}
   m_SourcePrefab: {fileID: 100100000, guid: 6d4059b8bf2c9cf45b753921d250c122, type: 3}
+--- !u!1 &2097770003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9165791493283531726, guid: 6d4059b8bf2c9cf45b753921d250c122, type: 3}
+  m_PrefabInstance: {fileID: 2097770002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2097770004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097770003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae9a67f94eba2d4da60492ef8ea9f3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0.3
+  speedY: 0.2
+  waveAmplitude: 0.5
+  waveFrequency: 3
+  waveSpeed: 0.2
 --- !u!1001 &2130587369
 PrefabInstance:
   m_ObjectHideFlags: 0
