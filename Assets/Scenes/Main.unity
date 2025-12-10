@@ -1183,7 +1183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3857243887397478227, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3887489074745224647, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3407,7 +3407,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8679273255454328318, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1420038058}
   m_SourcePrefab: {fileID: 100100000, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
 --- !u!1 &1420038054 stripped
 GameObject:
@@ -3430,6 +3433,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816095edc48d5e440b80b214b2ee5b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1420038058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420038054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1046029b240d85142a8eb712e59b421e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wobbleAmplitude: 2
+  wobbleSpeed: 1.5
 --- !u!1 &1500160377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 438093011724865842, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
