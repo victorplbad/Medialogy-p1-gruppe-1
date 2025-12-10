@@ -1,5 +1,4 @@
 using System.Collections;
-using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -23,8 +22,6 @@ public class CharacterScript : MonoBehaviour
         body = GetComponent<Rigidbody>();
     }
 
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         float x = Input.GetAxis("Horizontal");
@@ -62,5 +59,4 @@ public class CharacterScript : MonoBehaviour
         yield return new WaitForSeconds(delay);
         radar.GetComponent<RadarAskQuestion>().AskQuestion(ID);
     }
-
 }

@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class CheckpointID : MonoBehaviour
 {
     public static int plasticBag = 1;

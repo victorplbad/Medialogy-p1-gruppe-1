@@ -32,4 +32,8 @@ public class ButtonSelect : MonoBehaviour
             EventSystem.current.currentSelectedGameObject.GetComponent<Button>().onClick.Invoke();
         }
     }
+
+    void SelectTopButton() { 
+
+    }
 }

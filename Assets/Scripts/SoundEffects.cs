@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class SoundEffects : MonoBehaviour
 {
@@ -29,7 +28,6 @@ public class SoundEffects : MonoBehaviour
         StartCoroutine(PlaySeagullRandomly());
     }
 
-
     void Update()
     {
         float speed = rb.linearVelocity.magnitude * Time.timeScale;
@@ -37,8 +35,6 @@ public class SoundEffects : MonoBehaviour
         if (!waterAudio.isPlaying) waterAudio.Play();
 
         boatAudio.volume = (speed / 200) + 0.1f;
-
-       
 
         //Debug.Log("speed" + speed);
         if (speed > 5f && !boatAudio.isPlaying)
@@ -51,8 +47,6 @@ public class SoundEffects : MonoBehaviour
         {
             boatAudio.Stop();
         }
-        
-
     }
 
     public void PlayMusic()
@@ -75,5 +69,5 @@ public class SoundEffects : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         UiAudio.PlayOneShot(clip);    
-        }
+    }
 }

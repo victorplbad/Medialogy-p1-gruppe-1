@@ -10,7 +10,6 @@ public class AnimationManager : MonoBehaviour
     public GameObject InfoScreen;
     public DebrisCounterScript debrisCounterScript;
 
-
     public void PlayAnimation()
     {
         Time.timeScale = 1.0f;
