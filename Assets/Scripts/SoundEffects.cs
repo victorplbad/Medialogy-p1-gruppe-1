@@ -49,7 +49,7 @@ public class SoundEffects : MonoBehaviour
             boatAudio.Stop();
         }
 
-        if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene("harbor");
+        if (Input.GetKeyDown(KeyCode.P)) SceneManager.LoadScene("harbor");
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 

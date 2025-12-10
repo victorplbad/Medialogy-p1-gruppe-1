@@ -29,7 +29,7 @@ public class SoundEffectsHarbor : MonoBehaviour
     {
         if (!waterAudio.isPlaying) waterAudio.Play();
 
-        if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene("Main");
+        if (Input.GetKeyDown(KeyCode.P)) SceneManager.LoadScene("Main");
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
