@@ -1187,6 +1187,46 @@ PrefabInstance:
       value: "Korrekt! Plastik og syntetiske fibre bliver ikke opl\xF8st - de bliver
         kun brudt ned til mindre stykker mikroplast."
       objectReference: {fileID: 0}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 7940470384388360150}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: PlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: SoundEffects, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fb841d7f992a1c41bcd20d2d0d5e440, type: 3}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: b6710b4d7c6a08641be3c53d5c76ee37, type: 3}
+    - target: {fileID: 3242329329745815416, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3752191164610472546, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1316,6 +1356,11 @@ PrefabInstance:
 --- !u!224 &3476326394025924566 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7723441754058323075, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
+  m_PrefabInstance: {fileID: 6562106624258483029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7940470384388360150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3829043246073406595, guid: d8f64ae2309234d31b7df2e7914af638, type: 3}
   m_PrefabInstance: {fileID: 6562106624258483029}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6652739181434662766

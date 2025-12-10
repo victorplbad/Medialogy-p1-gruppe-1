@@ -2275,45 +2275,9 @@ PrefabInstance:
       value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 1680977712}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
-      value: 
-      objectReference: {fileID: 866821491358090344, guid: 1921de2c9a2fed242863805d7d902117, type: 3}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: PlaySound
-      objectReference: {fileID: 0}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: PlaySound
-      objectReference: {fileID: 0}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: SoundEffects, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 8300000, guid: 2fb841d7f992a1c41bcd20d2d0d5e440, type: 3}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 8300000, guid: b6710b4d7c6a08641be3c53d5c76ee37, type: 3}
-    - target: {fileID: 8652011433028404856, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.AudioClip, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 8741792986419209412, guid: 4dcb6a0891364314786578ec4f3e415e, type: 3}
       propertyPath: m_text
       value: "c. Tandb\xF8rste af Bionedbrydeligt plast"
