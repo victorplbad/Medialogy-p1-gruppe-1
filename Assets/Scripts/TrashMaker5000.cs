@@ -6,6 +6,7 @@ public class TrashMaker5000 : MonoBehaviour
 {
     public GameObject[] trashPrefabs;
     public GameObject player;
+    public GameObject trashParent;
 
     public float trashSpawnInterval = 100;
     public int trashPerInterval = 10;
@@ -40,9 +41,12 @@ public class TrashMaker5000 : MonoBehaviour
     {
         float angle = Random.Range(0, math.PI2);
         Vector3 randomPosition = transform.position + player.transform.forward * trashRadius + player.transform.right * (trashRadius * Random.Range(-0.6f, 0.6f));
+        randomPosition.y = 0;
 
         GameObject prefab = trashPrefabs[Random.Range(0, trashPrefabs.Length)];         //Pick a random prefab
         GameObject trash = Instantiate(prefab, randomPosition, Quaternion.identity);
+        if (trashParent) trash.transform.parent = trashParent.transform;
+
         trash.transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
 
         if (trash) trashCount++;
