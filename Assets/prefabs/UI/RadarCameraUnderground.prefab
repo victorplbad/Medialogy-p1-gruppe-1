@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.5, y: -66}
-  m_SizeDelta: {x: -5, y: -228}
+  m_AnchoredPosition: {x: 5, y: -66}
+  m_SizeDelta: {x: -10, y: -228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1731567579626390962
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Debris collected: '
+  m_text: 'Affald samlet:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -186,7 +186,6 @@ MonoBehaviour:
   origin: {fileID: 0}
   radarArrow: {fileID: 5077337479857781589}
   tmPro: {fileID: 1908111041670524889}
-  playerScript: {fileID: 0}
 --- !u!20 &2763729818083444069
 Camera:
   m_ObjectHideFlags: 0

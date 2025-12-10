@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using System.Data;
-using UnityEditor.Rendering;
+//using UnityEditor.Rendering;
 
 
 public class Dialogue : MonoBehaviour

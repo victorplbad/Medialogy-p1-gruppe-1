@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class SoundEffectsHarbor : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class SoundEffectsHarbor : MonoBehaviour
     private void Update()
     {
         if (!waterAudio.isPlaying) waterAudio.Play();
+
+        if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene("Main");
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
     IEnumerator PlaySeagullRandomly()

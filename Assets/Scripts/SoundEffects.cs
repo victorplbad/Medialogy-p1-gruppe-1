@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundEffects : MonoBehaviour
 {
@@ -47,6 +48,9 @@ public class SoundEffects : MonoBehaviour
         {
             boatAudio.Stop();
         }
+
+        if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene("harbor");
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
     public void PlayMusic()

@@ -10,6 +10,7 @@ public class boatWobble : MonoBehaviour
         float wobble = Mathf.Cos(Time.time * wobbleSpeed) * wobbleAmplitude;
         //transform.Rotate(new Vector3(0, 0, wobble));
         Vector3 angle = transform.localEulerAngles;
+        angle.x = 0;
         angle.z = wobble;
         transform.localEulerAngles = angle;
     }
