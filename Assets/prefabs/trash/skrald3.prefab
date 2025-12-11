@@ -74,7 +74,7 @@ MeshRenderer:
   - {fileID: -8274133419916619345, guid: 87dd9de8d98c48743a45ae325bc8f5c4, type: 3}
   - {fileID: -3522955778539423533, guid: 87dd9de8d98c48743a45ae325bc8f5c4, type: 3}
   - {fileID: -3335346271246440689, guid: 87dd9de8d98c48743a45ae325bc8f5c4, type: 3}
-  - {fileID: 9185737683893222716, guid: 87dd9de8d98c48743a45ae325bc8f5c4, type: 3}
+  - {fileID: -8274133419916619345, guid: 87dd9de8d98c48743a45ae325bc8f5c4, type: 3}
   - {fileID: -6087771358165109452, guid: 87dd9de8d98c48743a45ae325bc8f5c4, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -194,4 +194,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e818b25f36eaad34ba8be70727de4c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deleteInterval: 5
+  testInterval: 5

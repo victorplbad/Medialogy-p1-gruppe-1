@@ -3492,6 +3492,18 @@ PrefabInstance:
       propertyPath: trashParent
       value: 
       objectReference: {fileID: 293312883}
+    - target: {fileID: 2374103968978045342, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
+      propertyPath: 'trashPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2677777155537783499, guid: 5f750b27ae3e8c349903d2ba3234d41e, type: 3}
+    - target: {fileID: 2374103968978045342, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
+      propertyPath: 'trashPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2677777155537783499, guid: bf983d376aa89e0449bca4d253f792d7, type: 3}
+    - target: {fileID: 2374103968978045342, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
+      propertyPath: 'trashPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2677777155537783499, guid: a38c0a9aca3fae04c932cbdc0e4c73c5, type: 3}
     - target: {fileID: 8213809984649400250, guid: 58e99e62018c67b4ea8fb211c79f1df9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
