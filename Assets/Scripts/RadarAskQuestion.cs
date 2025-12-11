@@ -19,14 +19,20 @@ public class RadarAskQuestion : MonoBehaviour
     }
 
     public void TalkTrash(int ID)
-    {
+    {   //Talk to the player about the checkpointTrash
         PlayableDirector director = speechBubble.transform.GetChild(ID).gameObject.GetComponent<PlayableDirector>();
         director.Play();
         StartCoroutine(DelayedQuestion((float)director.duration, ID));
     }
 
+    IEnumerator DelayedQuestion(float delay, int ID)
+    {   //Ask question after delay
+        yield return new WaitForSeconds(delay);
+        AskQuestion(ID);
+    }
+
     public void AskQuestion(int ID)
-    {
+    {   //Ask a question about checkpointTrash
         screen.SetActive(false);
         activeQuestion = questions.transform.GetChild(ID).gameObject;
         activeQuestion.SetActive(true);
@@ -37,7 +43,7 @@ public class RadarAskQuestion : MonoBehaviour
     }
 
     public void CloseQuestions()
-    {
+    {   //Return the screen to normal after question
         screen.SetActive(true);
 
         activeQuestion.SetActive(false);
@@ -45,11 +51,5 @@ public class RadarAskQuestion : MonoBehaviour
         Time.timeScale = 1.0f;              //Green light
 
         gameManager.EndCheck();
-    }
-
-    IEnumerator DelayedQuestion(float delay, int ID)
-    {
-        yield return new WaitForSeconds(delay);
-        AskQuestion(ID);
     }
 }
