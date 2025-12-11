@@ -29,7 +29,11 @@ public class ButtonSelect : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && EventSystem.current.currentSelectedGameObject)
         {
-            EventSystem.current.currentSelectedGameObject.GetComponent<Button>().onClick.Invoke();
+            try
+            {
+                EventSystem.current.currentSelectedGameObject.GetComponent<Button>().onClick.Invoke();
+            }
+            catch { }
         }
     }
 

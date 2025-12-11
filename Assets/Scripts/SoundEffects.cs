@@ -20,6 +20,8 @@ public class SoundEffects : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
+
         rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
         c = GetComponent<CharacterScript>();
 

@@ -18,6 +18,8 @@ public class SoundEffectsHarbor : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
+
         waterAudio.clip = waterSound;
         waterAudio.volume = 0.1f;
 
