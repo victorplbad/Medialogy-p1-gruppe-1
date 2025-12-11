@@ -1,4 +1,3 @@
-using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -9,7 +8,6 @@ public class CharacterScript : MonoBehaviour
 
     public float topSpeed = 100f;
     public float turningFactor = 0.08f;
-
     public float score = 0;
 
     float speedFraction;
@@ -41,22 +39,14 @@ public class CharacterScript : MonoBehaviour
         if (collision.gameObject.CompareTag("trash") & trashFactory)
         {
             score += trashFactory.DestroyTrash(collision.gameObject);
-            //scoreTracker.fontStyle ^= FontStyles.Strikethrough;
         }
 
         if (collision.gameObject.CompareTag("trashCheckpoint"))
         {//Put function to quizz here
             int ID = collision.gameObject.GetComponent<CheckpointID>().ID;
 
-            float delay = radar.GetComponent<RadarAskQuestion>().TalkTrash(ID);
-            StartCoroutine(DelayedQuestion(delay, ID));
+            radar.GetComponent<RadarAskQuestion>().TalkTrash(ID);
             Destroy(collision.gameObject);
         }
-    }
-
-    IEnumerator DelayedQuestion(float delay, int ID)
-    {
-        yield return new WaitForSeconds(delay);
-        radar.GetComponent<RadarAskQuestion>().AskQuestion(ID);
     }
 }

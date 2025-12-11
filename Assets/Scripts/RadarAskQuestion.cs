@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -17,11 +18,11 @@ public class RadarAskQuestion : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public float TalkTrash(int ID)
+    public void TalkTrash(int ID)
     {
-        GameObject obj = speechBubble.transform.GetChild(ID).gameObject;
-        obj.GetComponent<PlayableDirector>().Play();
-        return (float)obj.GetComponent<PlayableDirector>().duration;
+        PlayableDirector director = speechBubble.transform.GetChild(ID).gameObject.GetComponent<PlayableDirector>();
+        director.Play();
+        StartCoroutine(DelayedQuestion((float)director.duration, ID));
     }
 
     public void AskQuestion(int ID)
@@ -44,5 +45,11 @@ public class RadarAskQuestion : MonoBehaviour
         Time.timeScale = 1.0f;              //Green light
 
         gameManager.EndCheck();
+    }
+
+    IEnumerator DelayedQuestion(float delay, int ID)
+    {
+        yield return new WaitForSeconds(delay);
+        AskQuestion(ID);
     }
 }
