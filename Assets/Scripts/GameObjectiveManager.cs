@@ -12,7 +12,6 @@ public class GameObjectiveManager : MonoBehaviour
     public float debrisTotal = 0f;
     public bool gameFinished = false;
 
-    
     private string initialText;
     private float timer = 0f;
     private readonly bool[] objectivesDone = new bool[9];   //we have 8 objectives + the debug one(takes index 0)
@@ -34,7 +33,7 @@ public class GameObjectiveManager : MonoBehaviour
             newText = newText.Replace("AAAC", debrisTotal.ToString("F2"));
             newText = newText.Replace("AAAD", (debrisTotal * 0.7).ToString("F2"));
             endScreenText.text = newText;
-        }
+        }   
     }
 
     public void CompletedObjective(int ID)
