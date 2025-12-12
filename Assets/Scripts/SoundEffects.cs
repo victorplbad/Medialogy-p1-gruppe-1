@@ -16,14 +16,12 @@ public class SoundEffects : MonoBehaviour
     public AudioClip waterSound;
 
     private Rigidbody rb;
-    private CharacterScript c;
 
     void Start()
     {
         Application.targetFrameRate = 60;
 
         rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
-        c = GetComponent<CharacterScript>();
 
         waterAudio.clip = waterSound;
         ambientAudio.clip = seagullSound;
