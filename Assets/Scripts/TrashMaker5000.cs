@@ -39,9 +39,8 @@ public class TrashMaker5000 : MonoBehaviour
 
     public void GenerateTrash()
     {
-        float angle = Random.Range(0, math.PI2);
         Vector3 randomPosition = transform.position + player.transform.forward * trashRadius + player.transform.right * (trashRadius * Random.Range(-0.6f, 0.6f));
-        randomPosition.y = 0;
+        randomPosition.y = 0;       //ensure it is spawned on the water plane as the boat wobble script messes with right direction vector
 
         GameObject prefab = trashPrefabs[Random.Range(0, trashPrefabs.Length)];         //Pick a random prefab
         GameObject trash = Instantiate(prefab, randomPosition, Quaternion.identity);

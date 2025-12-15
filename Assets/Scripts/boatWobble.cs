@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class boatWobble : MonoBehaviour
+public class BoatWobble : MonoBehaviour
 {
     public float wobbleAmplitude = 2f;
     public float wobbleSpeed = 1.5f;
