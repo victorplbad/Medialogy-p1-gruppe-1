@@ -20,7 +20,7 @@ public class RadarArrow : MonoBehaviour
         if (!origin) return;
 
         GameObject closestObject = null;
-        float range = 9999999;                                                                          //Big number that will be larger then real objects distance
+        float range = float.PositiveInfinity;                                                           //Big number that will be larger then real objects distance
 
         GameObject[] objects = GameObject.FindGameObjectsWithTag(targetTag);
 

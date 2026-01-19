@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CheckpointID : MonoBehaviour
 {
+    public static int debug = 0;
     public static int plasticBag = 1;
     public static int foodPackaging = 2;
     public static int sodaBottles = 3;
